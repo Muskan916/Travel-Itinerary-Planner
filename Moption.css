@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.component {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 45%;
+    padding: 20px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+h2 {
+    margin: 15px 0;
+}
+
+p {
+    color: #555;
+}
