@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your perfect vacation with ease.">
+    <meta name="keywords" content="vacation, booking, travel, trips">
+    <title>Vacation Booking</title>
+    <link rel="stylesheet" href="HP.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="LOGO.jpeg" alt="Your Company Logo">
+        <nav>
+            <ul>
+                <li><a href="#Home_Page.html">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="SignUp.html">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="login-btn">
+            <button onclick="window.location.href='login.html'" type="button">Log In</button>
+        </div>
+    </header>
+ 
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Explore Your Dream Vacation</h1>
+                <p>Find the perfect travel experience tailored just for you.</p>
+            </div>
+        </section>
+
+        <section class="booking-form">
+            <h2>Book Your Trip</h2>
+            <form>
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <select id="from" name="from" required>
+                        <option value="">Select City</option>
+                        <option value="Kuala Lumpur, Malaysia">Kuala Lumpur, Malaysia</option>
+                        <!-- Add more options here -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <select id="to" name="to" required>
+                        <option value="">Select City</option>
+                        <option value="Los Angeles, United States">Los Angeles, United States</option>
+                        <!-- Add more options here -->
+                    </select>
+                </div>
+                <div class="form-group date-range">
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" name="start-date" required>
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" name="end-date" required>
+                </div>
+                <div class="form-group traveler-options">
+                    <label for="travelers">Number of Travelers:</label>
+                    <select id="travelers" name="travelers" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4+</option>
+                    </select>
+                </div>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="featured-offers">
+            <h2>Featured Offers</h2>
+            <div class="offer-card">
+                <img src="offer1.jpg" alt="Special Offer 1">
+                <div class="offer-info">
+                    <h3>Special Offer to Paris</h3>
+                    <p>Save up to 30% on your next trip to Paris!</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="offer-card">
+                <img src="offer2.jpg" alt="Special Offer 2">
+                <div class="offer-info">
+                    <h3>Discounted Flights to New York</h3>
+                    <p>Get amazing discounts on flights to New York City.</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Moved FAQ section here -->
+        <section id="faq" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How do I book a trip?</h3>
+                <p>You can book a trip by filling out the booking form on our website and selecting your travel preferences.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is your cancellation policy?</h3>
+                <p>Our cancellation policy varies depending on the type of booking. Please refer to our terms and conditions for more details.</p>
+            </div>
+        </section>
+
+        <!-- Moved Customer Reviews section here -->
+        <section class="interactive-map">
+            <h2>Explore Our Destinations</h2>
+            <div class="map-container">
+                <!-- Embed an interactive map here -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126230.23888838036!2d-118.69192015026747!3d34.0201618620702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6e5e589dfff%3A0x5c2c62a93b8ea735!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1626884730131!5m2!1sen!2sus" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review-card">
+                <h3>John Doe</h3>
+                <p>"An amazing experience! The booking process was smooth and the trip was unforgettable."</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="review-card">
+                <h3>Jane Smith</h3>
+                <p>"Highly recommend this service. Everything was well-organized and exceeded my expectations."</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+        <ul>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="HP.js"></script>
+</body>
+</html>
