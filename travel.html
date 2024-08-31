@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Facilities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 0 auto;
+        }
+
+        .column {
+            flex: 1 1 40%; /* Flex-grow, flex-shrink, and flex-basis */
+            max-width: 35%; /* Ensure a maximum width of 50% for 2 items per row */
+            box-sizing: border-box;
+            padding: 10px; /* Add padding instead of margin to create spacing */
+        }
+
+        .column img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid #333;
+            box-sizing: border-box;
+        }
+
+        .column span {
+            display: block;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Facilities</h1>
+    </header>
+
+    <section>
+        <div class="row">
+            <div class="column">
+                <img src="auto-rikshaw.jpg" alt="Auto Rikshaw">
+                <span>Auto Rikshaw</span>
+            </div>
+
+            <div class="column">
+                <img src="cab.jpg" alt="Cab">
+                <span>Cab</span>
+            </div>
+
+            <div class="column">
+                <img src="bus.jpg" alt="Bus">
+                <span>Bus</span>
+            </div>
+
+            <div class="column">
+                <img src="train.jpg" alt="Train">
+                <span>Train</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
